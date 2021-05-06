@@ -1,0 +1,648 @@
+.photo77{
+    border: 2px solid black;
+    height: 60%;
+    background-image: url(./image/redmi_1.jpg);
+    background-size: cover;
+    border-radius: 8px;
+    transition-property: all;
+    transition-duration: 3s;
+    
+    
+}
+
+.photo77:hover{
+   animation: redmi 10s infinite;
+   transform: scale(1.35);
+   z-index: 1100;
+
+}
+@keyframes redmi {
+    25% {
+        background: url(./image/redmi_2.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/redmi_1.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/redmi_3.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/redmi_4.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+#nike{
+    background-image: url(./image/nike21.jpg);
+}
+#nike:hover{
+    animation: nike 10s infinite;
+}
+
+@keyframes nike {
+    25% {
+        background: url(./image/nike22.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/nike23.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/nike21.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/nike24.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+#levis{
+    background-image: url(./image/levis1.webp);
+}
+#levis:hover{
+    animation: levis 10s infinite;
+}
+
+@keyframes levis {
+    25% {
+        background: url(./image/levis2.webp) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/levis3.webp) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/levis1.webp) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/levis4.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+#samsung{
+    background-image: url(./image/samsung1.jpg);
+}
+#samsung:hover{
+    animation: samsung 10s infinite;
+}
+
+@keyframes samsung {
+    25% {
+        background: url(./image/samsung2.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/samsung1.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/samsung1.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/samsung4.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+#rolex{
+    background-image: url(./image/rolex1.jpg);
+}
+#rolex:hover{
+    animation: rolex 10s infinite;
+}
+
+@keyframes rolex {
+    25% {
+        background: url(./image/rolex2.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/rolex3.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/rolex1.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/rolex4.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+#macbook{
+    background-image: url(./image/macbook4.jpg);
+}
+#macbook:hover{
+    animation: macbook 10s infinite;
+}
+
+@keyframes macbook {
+    25% {
+        background: url(./image/macbook1.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/macbook2.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/macbook4.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/macbook3.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+#n95{
+    background-image: url(./image/n951.jpg);
+}
+#n95:hover{
+    animation: n95 10s infinite;
+}
+
+@keyframes n95 {
+    25% {
+        background: url(./image/n952.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/n953.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/n951.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/n954.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+#deetol{
+    background-image: url(./image/deetol1.jpg);
+}
+#deetol:hover{
+    animation:deetol 10s infinite;
+}
+
+@keyframes deetol {
+    25% {
+        background: url(./image/deetol2.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/deetol3.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/deetol1.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/deetol4.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+#fashion{
+    background-image: url(./image/clothes1.jfif);
+}
+#fashion:hover{
+    animation:fashion 10s infinite;
+}
+
+@keyframes fashion {
+    25% {
+        background: url(./image/clothes2.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/clothes3.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/clothes1.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/clothes4.jfif) no-repeat;
+        background-size: cover;
+    }
+}
+
+#electronics{
+    background-image: url(./image/electronics1.jfif);
+}
+#electronics:hover{
+    animation:electronics 10s infinite;
+}
+
+@keyframes electronics {
+    25% {
+        background: url(./image/electronics2.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/electronics3.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/electronics1.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/electronics4.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+#grocery{
+    background-image: url(./image/grocery1.jpg);
+}
+#grocery:hover{
+    animation:grocery 10s infinite;
+}
+
+@keyframes grocery {
+    25% {
+        background: url(./image/grocery2.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/grocery3.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/grocery1.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/grocery4.jfif) no-repeat;
+        background-size: cover;
+    }
+}
+
+#household{
+    background-image: url(./image/household1.jpg);
+}
+#household:hover{
+    animation:household 10s infinite;
+}
+
+@keyframes household {
+    25% {
+        background: url(./image/household2.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/household3.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/household1.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/household4.jfif) no-repeat;
+        background-size: cover;
+    }
+}
+
+#party{
+    background-image: url(./image/party1.jfif);
+}
+#party:hover{
+    animation:party 10s infinite;
+}
+
+@keyframes party {
+    25% {
+        background: url(./image/party2.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/party3.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/party1.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/party4.jfif) no-repeat;
+        background-size: cover;
+    }
+}
+
+#furniture{
+    background-image: url(./image/furniture1.jpg);
+}
+#furniture:hover{
+    animation:furniture 10s infinite;
+}
+
+@keyframes furniture {
+    25% {
+        background: url(./image/furniture2.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/furniture3.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/furniture1.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/furniture4.jfif) no-repeat;
+        background-size: cover;
+    }
+}
+
+#covid{
+    background-image: url(./image/ppe.jpg);
+}
+#covid:hover{
+    animation:covid 10s infinite;
+}
+
+@keyframes covid {
+    25% {
+        background: url(./image/deetol1.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/ppe.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/n952.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/gloves.jfif) no-repeat;
+        background-size: cover;
+    }
+}
+
+#oxygen{
+    background-image: url(./image/oxygen1.jfif);
+}
+#oxygen:hover{
+    animation:oxygen 10s infinite;
+}
+
+@keyframes oxygen {
+    25% {
+        background: url(./image/oxygen2.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./image/oxygen3.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./image/oxygen2.jfif) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(./image/oxygen2.jfif) no-repeat;
+        background-size: cover;
+    }
+}
+
+
+.name{
+    color: rgb(16, 248, 237);
+    font-size: 25px;
+    text-align: center;
+    font-family: fantasy;
+}
+.contents{
+    position: initial;
+    z-index: 11;
+    position: relative;
+    font-family: 'Exo 2', sans-serif;
+}
+.contents h3{
+    padding: 0px;
+    margin: 5px;
+    font-size: 20px;
+    color: rgb(73, 243, 31);
+    
+}
+.offer{
+    font-size: 25px;
+    color: rgb(10, 228, 228);
+   
+}
+.button{
+    margin: 15px 20px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid red;
+}
+.button:hover{
+    background-image: radial-gradient(green,purple);
+    color: chartreuse;
+}
+#submit{
+    width: 10em;
+}
+#submit:hover{
+    cursor: pointer;
+}
+.testi{
+    width: 100%;
+    position: absolute;
+    /* border: 2px solid rgb(206, 157, 157); */
+    height: 600px;
+    background-image: linear-gradient(rgb(122 231 55),#00fff3);
+    top:3670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+@media( max-width:1100px){
+    .testi{ top: 5000px;
+        /* background-image: none; */
+          }
+}
+.testitable{
+    /* border: 2px solid greenyellow; */
+    width:70%;
+    height:100px;
+    border-radius: 15px;
+    background-image: radial-gradient(#fff469,#a5732a);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+#testitab1{
+    /* margin-top: 50px; */
+    left: 50px;
+}
+#testitab2{ 
+    left: 385px;
+}
+#testitab3{
+    left: 50px;
+}
+.testi img{
+    margin: 15px;
+    width: 80px;
+    border-radius: 500px;
+}
+.testi p{
+     width: 80%;
+     font-family: 'Exo 2', sans-serif;
+}
+.testi h1{
+    font-family: 'Lobster', cursive;
+    font-size: 65px;
+    color: #f8f9fc;
+}
+.contact{
+    margin-top: 50px;
+    /* border: 2px solid white; */
+    width: 100%;
+    float: left;
+    position: absolute;
+    top: 4235px;
+    background-image: radial-gradient(rgb(189 246 19), rgb(0 243 255));
+    text-align: center;
+}
+@media( max-width:1100px){
+    .contact{ top: 5500px;
+              /* background-image: none; */
+           }
+}
+.contact h1{
+    font-family: 'Lobster', cursive;
+    font-size: 65px;
+    color: #141E4D;
+}
+.contact input{
+    margin-top: 15px;
+    width:60%;
+    padding: 15px 15px;
+    background-color: rgb(223, 189, 221);
+    border-radius: 15px;
+    font-size: 15px;
+}
+#submit:hover{
+    background-image: radial-gradient(red,blue);
+}
+.footer{
+    margin-top: 15px;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 320px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 4780px;
+}
+@media( max-width:1100px){
+    .slider{ 
+            top: 6500px; 
+                  }
+}
+.footer img{
+    float: left;
+}
+.listtt{
+/* border: 2px solid red; */
+width: 15%;
+font-family: 'Rubik', sans-serif;
+}
+/* .listtt h2{ */
+    /* color: rgb(255, 255, 255); */
+#footcontent{
+    font-size: 25px;
+    color: white;
+    padding: 15px;
+}
+.listtt li a{
+    text-decoration: none;
+    color: white;
+}
+.listtt li a:hover{
+    color: grey;
+}
+.listtt li{
+    text-align: left;
+    padding: 5px;
+}
+#final{
+    width: 28%;
+}
+.listtt li{
+    list-style: none;
+}
+

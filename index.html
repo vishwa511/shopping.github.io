@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINOD MERC |online shopping</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--for importing icons in webpage  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- importing google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Teko:wght@300&display=swap" rel="stylesheet">
+
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            height: auto;
+            /* background-color: #B0E1FF; */
+            background-color: black;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+        }
+
+        .navi {
+            position:fixed;
+            border-bottom: 3px solid blueviolet;
+            margin-bottom: 3px;
+            height: 100px;
+            width: 100%;
+            background-image: linear-gradient(to right, cornsilk, violet);
+            line-height: 60px;
+            opacity: 0.7;
+            z-index: 1100000;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            
+        }
+        @media( max-width:1100px){
+         .navi{height:200px;
+          width:100%; }
+}
+
+        .navi ul {
+            margin: 15px;
+            float: right;
+            z-index: 110000000;
+            
+        }
+
+        .navi ul li {
+            float: left;
+            margin: 9px;
+            padding: 0px 20px;
+            text-decoration: none;
+            list-style: none;
+            z-index: 110000000;
+            font-family: 'Pacifico', cursive;
+
+        }
+
+        .navi ul li a {
+            text-decoration: none;
+            color: rgb(248, 12, 12);
+            font-size: 28px;
+            z-index: 11000000;
+            transition-property: all;
+            transition-duration: 2s;
+
+        }
+
+        .navi ul li a:hover {
+            /* background-color: rgb(236, 233, 227); */
+            border-top: 3px solid blueviolet;
+            border-bottom: px solid blueviolet;
+            z-index: 110000000;
+            color: rgb(0, 0, 0);
+            background-image: radial-gradient(rgb(233, 216, 224),greenyellow);
+            border-radius: 15px;
+            line-height: 45px;
+        }
+        .logo {
+            display: inline-block;
+            position: absolute;
+            top: -30px;
+            left: 30px;
+            z-index: 11;
+        }
+
+        .logo img {
+            z-index: 10000;
+        }
+        /* @media( max-width:1100px){
+            .logo{text-align: center;}
+        } */
+        
+
+
+        .slider {
+            width: 100%;
+            height: 755px;
+            position: absolute;
+            z-index: 10;
+            top:0;
+            left: 0;
+            background: url(./image/back7.jpg) no-repeat;
+            background-size: cover;
+
+            animation: slide 20s infinite;
+        }
+
+        @keyframes slide {
+            25% {
+                background: url(./image/back2.jfif) no-repeat;
+                background-size: cover;
+            }
+
+            50% {
+                background: url(./image/back4.png) no-repeat;
+                background-size: cover;
+            }
+
+            75% {
+                background: url(./image/back1.jfif) no-repeat;
+                background-size: cover;
+            }
+
+            100% {
+                background: url(./image/back7.jpg) no-repeat;
+                background-size: cover;
+            }
+        }
+        
+        @media( max-width:1100px){
+            .slider{ 
+                background-size: cover; 
+                width: 100%;           }
+}
+
+        .sale {
+            /* border: 2px solid red; */
+            float: right;
+            position: absolute;
+            top: 500px;
+            right: 50px;
+            width: 800px;
+            text-align: center;
+            z-index: 12;
+            animation: sale 10s infinite;
+        }
+        @keyframes sale {
+            25% { right: 6em;
+            width: 80em;
+               top: 25em;
+            }
+
+            50% {
+                right: 10em;
+            width: 85em;
+            top: 20em;
+            }
+
+            75% {
+                right: 15em;
+            width: 89em;
+            top: 25em;
+            }
+
+            100% {
+                right: 20em;
+            width: 87em;
+            top: 30em;
+            }
+        }
+
+        
+
+        .sale h1 {
+            font-size: 50px;
+            color: #21a500;
+            font-family: 'Bangers', cursive;
+        }
+
+        .spam {
+            text-decoration: underline;
+            color: red;
+            font-size: 80px;
+        }
+
+        .special {
+            width: 100%;
+            color: #eaeeff;
+            /* height: 500px; */
+            position: absolute;
+            top: 765px;
+            font-size: 65px;
+            font-family: 'Lobster', cursive;
+        }
+
+        .special_prod {
+            width: 100%;
+            height: 1200px;
+            position: absolute;
+            top: 950px;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center; */
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-image: radial-gradient(rgb(52 236 203),rgb(11 243 154),rgb(122 255 0));
+
+        }
+        @media( max-width:1100px){
+                .special_prod{ justify-content: center;
+                    /* background-image: none; */
+                    text-align: center;
+                }
+}
+
+        .table {
+            /* flex-direction: row; */
+            margin-top: 5px;
+            height: 45%;
+            border: 2px solid mediumaquamarine;
+            width: 300px;
+            border-radius: 15px;
+            padding: 5px;
+            background-image: linear-gradient(to bottom, rgb(255, 254, 254),hotpink, red);
+        }
+
+        #s2 {
+            top: 1500px;
+            background-color: khaki;
+        }
+
+        #special2{
+          top: 1250px;  
+            
+        }
+        @media( max-width:1100px){
+            #special2{ 
+                top:2500px; 
+                width: 100%;    }
+                /* background-image: none;       } */
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="navi" id="navigationbar">
+        <div class="logo">
+            <img src="./image/logo3.png" alt="logo" srcset="">
+        </div>
+        <!-- <div class="search"> -->
+            <!-- <input type="search" name="search here" placeholder="search your favourate items"> -->
+        <!-- </div> -->
+        <ul class="list">
+            <li class="list-item"><a href="#mysweet">HOME</a></li>
+            <li class="list-item"><a href="#spd">HOT DEALS</a></li>
+            <li class="list-item"><a href="#special2">PRODUCTS</a></li>
+            <li class="list-item"><a href="register.html">REGISTER</a></li>
+            <li class="list-item"><a href="login.html">LOGIN</a></li>
+            <li class="list-item"><a href="#cont">CONTACT US</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="slider" id="mysweet">
+    </div>
+
+    <div class="sale">
+        <h1>GET READY FOR THE 40%-80% <span class="spam"> <br> SALE!!!!</span></h1>
+    </div>
+
+    <!-- for special offer department -->
+
+    <h1 class=special id="spd">HOT DEALS</h1>
+
+
+    <div class="special_prod">
+        <div class="table" id="tab1">
+            <div class="photo77">
+            </div>
+            <div class="name">REDMI NOTE 10 PRO</div>
+            <div class="contents">
+                <h3>
+                    <br>
+                    <del>MRP-19999/-</del> <br>
+                    <span class="offer"> OFFER PRICE-9999/-</span><br>
+                    TOTAL SAVING-10000/- <br>
+                    <input class="button" type="button" value="ADD TO CART">
+                    <input class="button" type="button" value="BUY NOW">
+                </h3>
+            </div>
+
+
+        </div>
+        <div class="table" id="tab2">
+
+            <div class="photo77" id="nike">
+            </div>
+            <div class="name">NIKE RUNNING SHOES</div>
+            <div class="contents">
+                <h3>
+                    <br>
+                    <del>MRP-6999/-</del> <br>
+                    <span class="offer"> OFFER PRICE-2999/-</span><br>
+                    TOTAL SAVING-4000/- <br>
+                    <input class="button" type="button" value="ADD TO CART">
+                    <input class="button" type="button" value="BUY NOW">
+                </h3>
+            </div>
+
+
+        </div>
+        <div class="table" id="tab3">
+            <div class="photo77" id="levis">
+            </div>
+            <div class="name">LEVIS MEN NAVY BLUE SHIRT</div>
+            <div class="contents">
+                <h3>
+                    <br>
+                    <del>MRP-2999/-</del> <br>
+                    <span class="offer"> OFFER PRICE-999/-</span><br>
+                    TOTAL SAVING-2000/- <br>
+                    <input class="button" type="button" value="ADD TO CART">
+                    <input class="button" type="button" value="BUY NOW">
+                </h3>
+            </div>
+
+        </div>
+        <div class="table" id="tab3">
+            <div class="photo77" id="samsung">
+            </div>
+            <div class="name">SAMSUNG 55inch LED SMART TV</div>
+            <div class="contents">
+                <h3>
+                    <br>
+                    <del>MRP-72999/-</del> <br>
+                    <span class="offer"> OFFER PRICE-49999/-</span><br>
+                    TOTAL SAVING-23000/- <br>
+                    <input class="button" type="button" value="ADD TO CART">
+                    <input class="button" type="button" value="BUY NOW">
+                </h3>
+            </div>
+
+        </div>
+        <div class="table" id="">
+            <div class="photo77" id="rolex">
+            </div>
+            <div class="name">ROLEX WRIST WATCH</div>
+            <div class="contents">
+                <h3>
+                    <br>
+                    <del>MRP-15999/-</del> <br>
+                    <span class="offer"> OFFER PRICE-9999/-</span><br>
+                    TOTAL SAVING-6000/- <br>
+                    <input class="button" type="button" value="ADD TO CART">
+                    <input class="button" type="button" value="BUY NOW">
+                </h3>
+            </div>
+
+        </div>
+        <div class="table" id="tab3">
+            <div class="photo77" id="macbook">
+            </div>
+            <div class="name">APPLE MACBOOK PRO</div>
+            <div class="contents">
+                <h3>
+                    <br>
+                    <del>MRP-199999/-</del> <br>
+                    <span class="offer"> OFFER PRICE-124999/-</span><br>
+                    TOTAL SAVING-75000/- <br>
+                    <input class="button" type="button" value="ADD TO CART">
+                    <input class="button" type="button" value="BUY NOW">
+                </h3>
+            </div>
+
+        </div>
+        <div class="table" id="tab3">
+            <div class="photo77" id="n95">
+            </div>
+            <div class="name">N-95 MASK</div>
+            <div class="contents">
+                <h3>
+                    <br>
+                    <del>MRP-199/-</del> <br>
+                    <span class="offer"> OFFER PRICE-99/-</span><br>
+                    TOTAL SAVING-100/- <br>
+                    <input class="button" type="button" value="ADD TO CART">
+                    <input class="button" type="button" value="BUY NOW">
+                </h3>
+            </div>
+
+        </div>
+        <div class="table" id="tab3">
+            <div class="photo77" id="deetol">
+            </div>
+            <div class="name">DEETOL SANITIZER(500ml)</div>
+            <div class="contents">
+                <h3>
+                    <br>
+                    <del>MRP-250/-</del> <br>
+                    <span class="offer"> OFFER PRICE-150/-</span><br>
+                    TOTAL SAVING-100/- <br>
+                    <input class="button" type="button" value="ADD TO CART">
+                    <input class="button" type="button" value="BUY NOW">
+                </h3>
+            </div>
+
+        </div>
+
+        
+    <!-- </div> -->
+
+        <!-- FOR SHOP BY CATEGORIES DEPARTMENT -->
+        
+            <h1 class="special" id="special2">SHOP BY CATEGORIES</h1>
+        
+
+        <div class="special_prod" id="s2">
+            <div class="table" id="tab1">
+                <div class="photo77" id="fashion">
+                </div>
+                <div class="name">FASHION STORE</div>
+                <div class="contents">
+                    <h3>
+                        <br>
+                        MENS WEAR <br>
+                        WOMENS WEAR<br>
+                        CHILD COLLECTION<br>
+                        <input class="button" type="button" value="VISIT STORE">
+                        <!-- <input class="button" type="button" value="BUY NOW"> -->
+                    </h3>
+                </div>
+
+
+            </div>
+            <div class="table" id="tab2">
+
+                <div class="photo77" id="electronics">
+                </div>
+                <div class="name">ELECTRONICS STORE</div>
+                <div class="contents">
+                    <h3>
+                        <br>
+                        TV, LAPTOP, PC... <br>
+                        REFRIGERATOR, WASHING MACHINE<br>
+                        FAN, COOLAR<br>
+                        <input class="button" type="button" value="VISIT STORE">
+                        <!-- <input class="button" type="button" value="BUY NOW"> -->
+                    </h3>
+                </div>
+
+
+            </div>
+            <div class="table" id="tab3">
+                <div class="photo77" id="grocery">
+                </div>
+                <div class="name">GROCERY STORE</div>
+                <div class="contents">
+                    <h3>
+                        <br>
+                        DAILY HOME NEEDS<br>
+                        FRUITS, VEGETABLE<br>
+                        WAFFERS, AND MANY MORE<br>
+                        <input class="button" type="button" value="VISIT STORE">
+                        <!-- <input class="button" type="button" value="BUY NOW"> -->
+                    </h3>
+                </div>
+
+            </div>
+            <div class="table" id="tab3">
+                <div class="photo77" id="household">
+                </div>
+                <div class="name">HOUSEHOLD STORE</div>
+                <div class="contents">
+                    <h3>
+                        <br>
+                        PLATES, SPOONS, BOWLS...<br>
+                        VARIOUS DESIGNED CRONICS<br>
+                        VISIT STORE<br>
+                        <input class="button" type="button" value="VISIT STORE">
+                        <!-- <input class="button" type="button" value="BUY NOW"> -->
+                    </h3>
+                </div>
+
+            </div>
+            <div class="table" id="tab3">
+                <div class="photo77" id="party">
+                </div>
+                <div class="name">PARTY ITEMS</div>
+                <div class="contents">
+                    <h3>
+                        <br>
+                        CAKE, DECORATION ITEMS<br>
+                        DJ LIGHTS, RIBBONS<br>
+                        PARTY SONGS COLLECTION<br>
+                        <input class="button" type="button" value="VISIT STORE">
+                        <!-- <input class="button" type="button" value="BUY NOW"> -->
+                    </h3>
+                </div>
+
+            </div>
+            <div class="table" id="tab3">
+                <div class="photo77" id="furniture">
+                </div>
+                <div class="name">FURNITURE STORE</div>
+                <div class="contents">
+                    <h3>
+                        <br>
+                        BED, SOFA, <br>
+                        TABLE, CHAIR<br>
+                        RECTLINER AND MANY MORE<br>
+                        <input class="button" type="button" value="VISIT STORE">
+                        <!-- <input class="button" type="button" value="BUY NOW"> -->
+                    </h3>
+                </div>
+
+            </div>
+            <div class="table" id="tab3">
+                <div class="photo77" id="covid">
+                </div>
+                <div class="name">COVID PROTECTION</div>
+                <div class="contents">
+                    <h3>
+                        <br>
+                        MASK, GLOVES, PPE KIT<br>
+                        HAND SANITIZER, SPARAY<br>
+                        VACCINE(COVISHIELD, COVACCINE)<br>
+                        <input class="button" type="button" value="VISIT STORE">
+                        <!-- <input class="button" type="button" value="BUY NOW"> -->
+                    </h3>
+                </div>
+
+            </div>
+            <div class="table" id="tab3">
+                <div class="photo77" id="oxygen">
+                </div>
+                <div class="name">OXYGEN CYLENDERS</div>
+                <div class="contents">
+                    <h3>
+                        <br>
+                        OXYGEN FOR COVID PATIENTS<br>
+                        <span class="offer">90% OFF</span><br>
+                        <!-- TOTAL SAVING-10000/- <br> -->
+                        <input class="button" type="button" value="VISIT STORE">
+                        <!-- <input class="button" type="button" value="BUY NOW"> -->
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+<!-- <div>  -->
+    <div class="testi">
+        <h1 class="testih1">TESTIMONIALS</h1>
+        <div class="testitable" id="testitab1">
+            <img src="./image/modi1.jpg" alt="" srcset="">
+            <p>"It isn’t just that E-commerce depends on express mail; there’s a sense in which E-commerce is express mail. Right now, billions of dollars are being spent around the country on so-called “last-mile delivery systems"<br> <br> <span>-NARENDRA MODI</span></p>
+        </div>
+        <div class="testitable" id="testitab2">
+            <img src="./image/ambani1.jpg" alt="" srcset="">
+            <p>"If you do build a great experience, customers tell each other about that. Word of mouth is very powerful"<br> <br> <span>-MUKESH AMBANI</span></p>
+        </div>
+        <div class="testitable" id="testitab3">
+            <img src="./image/tata2.jfif" alt="" srcset="">
+            <p>"Making a profitable e-commerce store is hard work. I love the fact that Shopify clients help each other in our forums. I love the fact that everyone feels like we are in this together and that we all will succeed together"<br> <br> <span>-RATAN TATA</span></p>
+        </div>
+    </div>
+    <div class="contact" id="cont">
+        <h1>CONTACT US</h1>
+        <form action="feedback.php">
+            <input type="text" placeholder="Feedback" name="feedback"><br>
+            <input type="text" name="name" id="" placeholder="Name"> <br>
+            <input type="phone number" name="mobile no" placeholder="Mobile Number"> <br>
+             <input type="email" name="email" id="" placeholder="E-mail"><br>
+             <input type="button" value="Submit" id="submit">
+        </form>
+        </div>
+        <div class="footer">
+            <img src="./image/logo3.png" alt="" srcset="">
+            <div class="listtt">
+                <!-- <h2>CONTENTS</h2> -->
+                <ul>
+                    <li id="footcontent">CONTENTS</li>
+                    <li><a href="#">SPECIAL OFFERS</a></li>
+                   <li><a href="#">CATEGORIES</a></li>
+                    <li><a href="#">TESTINOMIALS</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">REGISTER NOW</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div> 
+            <div class="listtt"> <ul>
+                <li id="footcontent">CATEGORIES</li>
+                <li><a href="#special2">FASHION</a></li>
+               <li><a href="#special2">ELECTRONICS</a></li>
+                <li><a href="#special2">GROCERIES</a></li>
+                <li><a href="#special2">HOUSE-HOLD</a></li>
+                <li><a href="#special2">PARTY</a></li>
+                <li><a href="#special2">FURNITURE</a></li>
+                <li><a href="#special2">COVID-19</a></li>
+                <li><a href="#special2">OXYGEN GAS</a></li>
+            </ul></div>
+            <div class="listtt"> <ul>
+                <li id="footcontent">OFFERS</li>
+                <li><a href="#spd">REDMI NOTE 10PRO</a></li>
+               <li><a href="#spd">NIKE RUNNING SHOE</a></li>
+                <li><a href="#spd">LEVIS MEN SHIRT</a></li>
+                <li><a href="#spd">SAMSUNG LED TV</a></li>
+                <li><a href="#spd">ROLEX WATCH</a></li>
+                <li><a href="#spd">APPLE MACBOOK PRO</a></li>
+                <li><a href="#spd">N-95 MASK</a></li>
+                <li><a href="#spd">DEETOL SANITIZER</a></li>
+            </ul></div>
+            <div class="listtt" id="final"> 
+                <ul>  
+
+                    <li id="footcontent">© 2021 <i>All rights reserved</i></li>
+                    <li><a href="#"><i class="material-icons" style="font-size:48px;color:white;">facebook</i></a></li>
+                    <li><a href="#"><i class="material-icons" style="font-size:48px;color:white;">chat</i></a></li>
+                    <li><a href="#"><i class="material-icons" style="font-size:48px;color:white;">mail</i></a></li>
+                    <!-- <li><a href="#">ROLEX WATCH</a></li> -->
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+
+        
+
+</body>
+
+</html>
